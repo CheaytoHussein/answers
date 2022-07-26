@@ -1,0 +1,318 @@
+body{
+    width: 95vw;
+    height: 95vh;
+    font-family: 'Fira Sans Condensed';
+    overflow-x: hidden;
+}
+#nav{
+    z-index: 100;
+    position: fixed;
+    top : 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(44, 118, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+}
+#answersH1{
+    margin-left: 4vw;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+#space{
+    width: 50vw;
+    background-color: rgb(44, 118, 255);
+    height: 2vh;
+}
+#search{
+    height: 4vh;
+    width: 5vw;
+    fill: white;
+}
+#create,#coin-div,#login,#inputSearch{
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#create{
+    border: rgb(252, 101, 46) 1px solid;
+    border-radius: 12px;
+    background-color: rgb(252, 101, 46);
+    font-size: smaller;
+    font-weight: normal;
+}
+#createh2{
+    margin-left: 0.4vw;
+    font-weight: lighter;
+}
+#arrow-svg{
+    width: 2vw;
+    height: 3vh;
+    fill: white;
+}
+#bell{
+    width: 3vw;
+    height: 4vh;
+    fill: white;
+}
+#bell:hover,#search:hover{
+    cursor: pointer;
+}
+#create:hover{
+    cursor: pointer;
+    background-color: rgb(255, 171, 140);
+    transition: 0.2s;
+}
+#coin-div{
+    font-weight: normal;
+}
+#coin-div:hover{
+    cursor: pointer;
+}
+#coin-div>h2{
+    font-weight: lighter;
+}
+#coin{
+    width: 2vw;
+    height: 4vh;
+}
+#login{
+    width: 7vw;
+}
+#login>h2{
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+#login:hover{
+    background-color: rgb(114, 179, 236);
+    border: rgb(114, 179, 236) 0px solid;
+    border-radius: 12px;
+}
+#right-nav{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    color: white;
+}
+#space2{
+    height: 22vh;
+}
+#question{
+    text-align: center;
+    color: rgb(41, 41, 41);    
+    font-weight: bold;
+    transform: scale(1.1,1.1);
+}
+#inputDiv{
+    border: rgb(150, 187, 255) 1px;
+    border-style: solid;
+    border-radius: 3.5px;
+}
+#input{
+    height: 5vh;
+    width: 50vw;
+    border: none;
+}
+#search-svg{
+    width: 2vw;
+    height: 3vh;
+    fill: white;
+}
+#searchDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.4vw;
+    width: 2.5vw;
+    height: 5vh;
+    background-color: rgb(44, 118, 255);
+    border: rgb(44, 118, 255) 1px solid;
+    border-radius: 4px;
+}
+h3{
+    width: 90vw;
+    text-align: center;
+    font-weight: normal;
+}
+.h3anchor{
+    color: rgb(44, 118, 255);
+    text-decoration: none;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 6.75vw 6.75vw 6.75vw 6.75vw 6.75vw 6.75vw 6.75vw 6.75vw;
+    grid-template-rows: 14vh;
+    justify-content: center;
+    gap: 1vw;
+}
+h4{
+    position: absolute;
+    top: 67vh;
+    width: 6.6vw;
+    text-align: center;
+    height: 7vh;
+    font-weight: lighter;
+}
+.griDiv{
+    border: rgb(150, 187, 255) 1px solid;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+}
+.Div{
+    z-index: -1;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 63vh;
+}
+#mathDiv{
+    background-color: rgb(4, 226, 255);
+    border: rgb(4, 226, 255) 1px solid; 
+}
+#scienceDiv{
+    background-color: rgb(31, 168, 31);
+    border: rgb(31, 168, 31) 1px solid;
+}
+#historyDiv{
+    background-color: rgb(214, 88, 42);
+    border: rgb(214, 88, 42) 1px solid;
+}
+#artsDiv{
+    background-color: violet;
+    border: violet 1px solid;
+}
+#socialDiv{
+    background-color: rgb(146, 0, 97);
+    border: rgb(146, 0, 97) 1px solid;
+}
+#ETDiv{
+    background-color: rgb(219, 219, 8);
+    border: rgb(219, 219, 8) 1px solid;
+}
+#businessDiv{
+    background-color: rgb(68, 5, 68);
+    border: violet 1px solid;
+}
+#ET{
+    width: 2vw;
+    height: 4vh;
+    fill: rgb(179, 172, 172);
+}
+#business{
+    width: 2vw;
+    height: 4vh;
+    fill: rgb(211, 211, 75);
+}
+#social{
+    width: 2vw;
+    height: 4vh;
+    fill: rgb(211, 211, 75);
+}
+#science,#arts{
+    width: 2vw;
+    height: 4vh;
+    fill: antiquewhite;
+}
+#division{
+    fill: grey;
+    width: 2vw;
+    height: 4vh;
+}
+#history{
+    width: 2vw;
+    height: 4vh;
+    fill: rgb(36, 36, 170);
+}
+#hundredDiv{
+    font-size: larger;
+    background-color: rgb(211, 211, 211);
+    border: rgb(211, 211, 211) 1px solid;
+}
+#svg{
+    width: 100vw;
+    height: 70vh;
+    background: url(https://st.answers.com/home_page_backgrounds/OG3.d.png);
+    background-size: cover;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+}
+.anchors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: rgb(114, 179, 236) 1px solid;
+    border-radius: 6px;
+    text-decoration: none;
+    height: 5vh;
+    width: 12vw;
+    font-size: smaller;
+    color: black;
+}
+#footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e3c57;
+    color: white;
+}
+#subjectFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flexes{
+    font-weight: normal;
+}
+.subjects{
+    font-weight: lighter;
+}
+.subjects:hover{
+    cursor: pointer;
+}
+#answers{
+    margin-left: 43vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    font-weight: 500;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon{
+    height: 4vh;
+    width: 3vw;
+    fill: white;
+}
+#love{
+    width: 30vw;
+    margin-left: 35vw;
+}
+#copyright{
+    text-align: center;
+    font-weight: 300;
+    margin-left: 30vw;
+    width: 38vw;
+}
